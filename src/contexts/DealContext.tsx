@@ -20,7 +20,24 @@ interface DealContextType {
 const DealContext = createContext<DealContextType>({
   deals: [],
   loading: true,
-  createDeal: async () => ({ id: "", title: "", description: "", initialPrice: 0, currentPrice: 0, status: "pending", createdAt: "", updatedAt: "", buyerId: "", documents: [] }),
+  createDeal: async () => ({ 
+    id: "", 
+    title: "", 
+    description: "", 
+    initialPrice: 0, 
+    currentPrice: 0, 
+    status: "pending", 
+    createdAt: "", 
+    updatedAt: "", 
+    buyerId: "",
+    buyer: {
+      id: "",
+      name: "",
+      email: "",
+      role: "buyer"
+    }, 
+    documents: [] 
+  }),
   updateDealStatus: async () => {},
   updateDealPrice: async () => {},
   getDealById: () => undefined,

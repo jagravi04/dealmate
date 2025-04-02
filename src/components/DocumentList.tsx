@@ -7,7 +7,7 @@ import {
   FileImage, 
   FileSpreadsheet, 
   FileText, 
-  FilePdf 
+  FileType 
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Document } from "@/types";
@@ -20,7 +20,7 @@ interface DocumentListProps {
 const DocumentList: React.FC<DocumentListProps> = ({ documents }) => {
   const getFileIcon = (fileType: string) => {
     if (fileType.includes("pdf")) {
-      return <FilePdf className="h-5 w-5 text-red-500" />;
+      return <FileType className="h-5 w-5 text-red-500" />;
     } else if (fileType.includes("spreadsheet") || fileType.includes("excel") || fileType.includes("csv")) {
       return <FileSpreadsheet className="h-5 w-5 text-green-500" />;
     } else if (fileType.includes("image")) {
