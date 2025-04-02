@@ -1,3 +1,4 @@
+
 ## Project info
 
 **URL**: https://dealmate.dev/projects/4f7bc022-e215-405b-a80d-834688f4cfd3
@@ -40,6 +41,32 @@ npm run dev
 - Click on "New codespace" to launch a new Codespace environment.
 - Edit files directly within the Codespace and commit and push your changes once you're done.
 
+## Deployment Instructions
+
+### Firebase Hosting Deployment
+
+1. Install Firebase CLI globally:
+```sh
+npm install -g firebase-tools
+```
+
+2. Login to Firebase:
+```sh
+firebase login
+```
+
+3. Build your project:
+```sh
+npm run build
+```
+
+4. Deploy to Firebase:
+```sh
+firebase deploy
+```
+
+Your app will be deployed to: `https://dealmate-app.web.app`
+
 ## What technologies are used for this project?
 
 This project is built with .
@@ -49,3 +76,4 @@ This project is built with .
 - React
 - shadcn-ui
 - Tailwind CSS
+
