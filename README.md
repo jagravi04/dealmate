@@ -1,6 +1,6 @@
 ## Project info
 
-**URL**: https://lovable.dev/projects/4f7bc022-e215-405b-a80d-834688f4cfd3
+**URL**: https://dealmate.dev/projects/4f7bc022-e215-405b-a80d-834688f4cfd3
 
 ## How can I edit this code?
 
